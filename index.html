@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prof. Rafael Mendes — Treinador de Natação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo">
+        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M8 26c3-6 7-9 12-9s9 3 12 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M8 22c3-6 7-9 12-9s9 3 12 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".3"/>
+          <circle cx="20" cy="14" r="4.5" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <!-- ✏️ TROCAR NOME DO TREINADOR -->
+        <span>Prof. Rafael Mendes</span>
+      </a>
+
+      <nav class="header__nav" id="mainNav">
+        <a href="#inicio" class="header__link">Início</a>
+        <a href="#sobre" class="header__link">Sobre mim</a>
+        <a href="#treinos" class="header__link">Treinos</a>
+        <a href="#modalidades" class="header__link">Modalidades</a>
+        <a href="#valores" class="header__link">Valores</a>
+        <a href="#diferenciais" class="header__link">Diferenciais</a>
+        <a href="#contato" class="header__link">Contato</a>
+      </nav>
+
+      <!-- ✏️ TROCAR WHATSAPP (só números, com DDI) -->
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." class="btn btn--sm header__cta" target="_blank" rel="noopener">Agendar aula</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__deco hero__deco--blob1"></div>
+    <div class="hero__deco hero__deco--blob2"></div>
+    <div class="hero__deco hero__deco--wave"></div>
+
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="hero__tag reveal">Natação com segurança e carinho</p>
+        <!-- ✏️ TROCAR NOME -->
+        <h1 class="hero__title reveal">Rafael<br><span>Mendes</span></h1>
+        <p class="hero__subtitle reveal">Treinador de Natação Infantil e Adulto</p>
+        <p class="hero__desc reveal">Seu filho vai amar a água desde a primeira aula. Metodologia segura, acompanhamento individual e muita diversão.</p>
+
+        <div class="hero__actions reveal">
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." class="btn" target="_blank" rel="noopener">Agendar aula experimental</a>
+          <a href="#sobre" class="btn btn--ghost">Conheça mais</a>
+        </div>
+
+        <div class="hero__socials reveal">
+          <!-- ✏️ TROCAR LINKS -->
+          <a href="https://instagram.com/seuinstagram" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.264-1.226l-.306-.182-2.87.852.852-2.87-.182-.306A8 8 0 1112 20z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="hero__img-ring">
+          <!-- ✏️ TROCAR: substitua o div abaixo por <img src="foto.jpg" alt="Prof. Rafael"> -->
+          <div class="hero__img-placeholder">
+            <svg viewBox="0 0 140 140" fill="none"><circle cx="70" cy="50" r="26" stroke="white" stroke-width="3"/><path d="M22 120c10-28 22-40 48-40s38 12 48 40" stroke="white" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="hero__badge hero__badge--1">
+          <span class="hero__badge-emoji">🏊</span>
+          <div><strong>+1.000</strong><small>alunos</small></div>
+        </div>
+        <div class="hero__badge hero__badge--2">
+          <span class="hero__badge-emoji">⭐</span>
+          <div><strong>11+ anos</strong><small>experiência</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__curve">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path fill="#ffffff" d="M0,60 C320,120 640,0 960,60 C1120,90 1300,30 1440,60 L1440,120 L0,120Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SOBRE MIM
+  ════════════════════════════════════════ -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <h2 class="section-title reveal">Sobre Mim</h2>
+
+      <div class="about__grid">
+        <div class="about__photo reveal">
+          <!-- ✏️ TROCAR: <img src="foto-sobre.jpg" alt="Treinador"> -->
+          <div class="about__photo-placeholder">
+            <svg viewBox="0 0 80 100" fill="none"><circle cx="40" cy="30" r="16" stroke="white" stroke-width="2.5"/><path d="M10 85c6-18 16-28 30-28s24 10 30 28" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="about__photo-deco"></div>
+        </div>
+
+        <div class="about__content reveal">
+          <!-- ✏️ TROCAR TEXTOS -->
+          <p class="about__greeting">Olá! Eu sou o <strong>Rafael Mendes</strong>, treinador de natação com formação em Educação Física e mais de uma década de dedicação à água.</p>
+          <p>Ensino natação desde 2013 e já tive o privilégio de acompanhar centenas de alunos — desde bebês em suas primeiras braçadas até adultos superando medos e alcançando novos objetivos na água.</p>
+          <p>Minha missão é ser mais do que um professor: quero ser um parceiro na jornada de cada aluno, criando um ambiente seguro, acolhedor e divertido. Cada passo no desenvolvimento de um nadador é uma oportunidade de inspirar confiança e amor pela água.</p>
+        </div>
+      </div>
+
+      <!-- ✏️ TROCAR NÚMEROS -->
+      <div class="about__stats">
+        <div class="about__stat reveal">
+          <span class="about__stat-num">>11</span>
+          <span class="about__stat-unit">anos</span>
+          <span class="about__stat-label">de experiência como treinador</span>
+        </div>
+        <div class="about__stat reveal" style="--delay:.12s">
+          <span class="about__stat-num">20</span>
+          <span class="about__stat-unit">mil</span>
+          <span class="about__stat-label">treinos realizados</span>
+        </div>
+        <div class="about__stat reveal" style="--delay:.24s">
+          <span class="about__stat-num">1.000<small>+</small></span>
+          <span class="about__stat-unit">&nbsp;</span>
+          <span class="about__stat-label">alunos que amam nadar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       NAS AULAS TRABALHAMOS
+  ════════════════════════════════════════ -->
+  <section class="benefits" id="treinos">
+    <div class="benefits__wave-top">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path fill="#ffffff" d="M0,50 C360,110 720,-10 1080,50 C1260,80 1380,30 1440,50 L1440,0 L0,0Z"/></svg>
+    </div>
+
+    <div class="container">
+      <h2 class="section-title section-title--light reveal">Nas aulas trabalhamos</h2>
+      <p class="section-sub section-sub--light reveal">Muito mais que nadar — desenvolvemos saúde, confiança e habilidades para a vida</p>
+
+      <div class="benefits__grid">
+        <div class="benefits__card reveal">
+          <div class="benefits__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M14 38V24l10-12 10 12v14"/><path d="M20 38v-8h8v8"/></svg>
+          </div>
+          <h3>Melhora da forma física</h3>
+          <p>Fortalecimento muscular e resistência de forma lúdica e progressiva.</p>
+        </div>
+        <div class="benefits__card reveal" style="--delay:.08s">
+          <div class="benefits__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="18"/><path d="M16 24c2-3 4-5 8-5s6 2 8 5"/><path d="M18 18h.02M30 18h.02"/></svg>
+          </div>
+          <h3>Coordenação motora</h3>
+          <p>Movimentos precisos que melhoram o desenvolvimento motor global.</p>
+        </div>
+        <div class="benefits__card reveal" style="--delay:.16s">
+          <div class="benefits__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M24 4v8M24 36v8M4 24h8M36 24h8"/><circle cx="24" cy="24" r="10"/><path d="M14 14l6 6M28 28l6 6M34 14l-6 6M16 28l-6 6"/></svg>
+          </div>
+          <h3>Segurança na água</h3>
+          <p>Técnicas de sobrevivência e prevenção de afogamento desde cedo.</p>
+        </div>
+        <div class="benefits__card reveal" style="--delay:.24s">
+          <div class="benefits__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 24c5-8 9-12 14-12s8 3 10 8c2-5 4-8 10-8s9 4 14 12"/><path d="M4 32c5-8 9-12 14-12s8 3 10 8c2-5 4-8 10-8s9 4 14 12" opacity=".35"/></svg>
+          </div>
+          <h3>Respiração</h3>
+          <p>Controle respiratório que melhora a capacidade pulmonar e o foco.</p>
+        </div>
+        <div class="benefits__card reveal" style="--delay:.32s">
+          <div class="benefits__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M24 4L30 16 44 18.5 34 28 36 42 24 36 12 42 14 28 4 18.5 18 16z"/></svg>
+          </div>
+          <h3>Confiança</h3>
+          <p>Cada conquista na piscina fortalece a autoestima dentro e fora da água.</p>
+        </div>
+        <div class="benefits__card reveal" style="--delay:.40s">
+          <div class="benefits__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M24 44c-8-6-16-14-16-22a10 10 0 0120 0"/><path d="M24 44c8-6 16-14 16-22a10 10 0 00-20 0"/><path d="M24 28v-8M20 24h8"/></svg>
+          </div>
+          <h3>Saúde cardiovascular</h3>
+          <p>O melhor exercício para o coração, com baixo impacto e alto benefício.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="benefits__wave-bottom">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path fill="#ffffff" d="M0,50 C360,110 720,-10 1080,50 C1260,80 1380,30 1440,50 L1440,100 L0,100Z"/></svg>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       MODALIDADES
+  ════════════════════════════════════════ -->
+  <section class="modalities" id="modalidades">
+    <div class="container">
+      <h2 class="section-title reveal">Escolha o treino ideal</h2>
+
+      <div class="modalities__group">
+        <h3 class="modalities__label reveal"><span></span>Para crianças<span></span></h3>
+        <div class="modalities__grid">
+          <div class="mod-card reveal">
+            <div class="mod-card__bar"></div>
+            <h4>Aula individual</h4>
+            <p>Atenção 100% focada no seu filho. Aprendizado personalizado do zero, com evolução no ritmo ideal de cada criança.</p>
+          </div>
+          <div class="mod-card mod-card--accent reveal" style="--delay:.06s">
+            <div class="mod-card__bar"></div>
+            <h4>Preparação para competições</h4>
+            <p>Treino técnico para crianças que já nadam e querem experiência competitiva, evolução de nados e marcas.</p>
+          </div>
+          <div class="mod-card reveal" style="--delay:.12s">
+            <div class="mod-card__bar"></div>
+            <h4>Mini grupo</h4>
+            <p>Grupos de 2 a 3 crianças. Ideal para socialização, diversão e aprendizado coletivo com atenção especial.</p>
+          </div>
+          <div class="mod-card mod-card--accent reveal" style="--delay:.18s">
+            <div class="mod-card__bar"></div>
+            <h4>Crianças com necessidades específicas</h4>
+            <p>Aulas adaptadas com paciência e metodologia inclusiva para crianças do espectro autista ou outras condições.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modalities__group">
+        <h3 class="modalities__label reveal"><span></span>Para adultos<span></span></h3>
+        <div class="modalities__grid">
+          <div class="mod-card reveal">
+            <div class="mod-card__bar"></div>
+            <h4>Aula individual</h4>
+            <p>Treino personalizado com foco nas suas metas: aprender a nadar, melhorar técnica ou condicionamento.</p>
+          </div>
+          <div class="mod-card reveal" style="--delay:.06s">
+            <div class="mod-card__bar"></div>
+            <h4>Mini grupo</h4>
+            <p>Treine com um amigo ou parceiro. Ideal para casais, amigos ou duplas que buscam motivação conjunta.</p>
+          </div>
+          <div class="mod-card mod-card--accent reveal" style="--delay:.12s">
+            <div class="mod-card__bar"></div>
+            <h4>Reabilitação aquática</h4>
+            <p>Recuperação de lesões e fortalecimento com exercícios de baixo impacto orientados por profissional qualificado.</p>
+          </div>
+          <div class="mod-card reveal" style="--delay:.18s">
+            <div class="mod-card__bar"></div>
+            <h4>Treino para gestantes</h4>
+            <p>Exercícios seguros e confortáveis na água para futuras mamães, com acompanhamento especializado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       PACOTES E VALORES
+  ════════════════════════════════════════ -->
+  <section class="pricing" id="valores">
+    <div class="pricing__pool">
+      <div class="pricing__lane-line"></div>
+      <div class="pricing__lane-line"></div>
+      <div class="pricing__lane-line"></div>
+      <div class="pricing__lane-line"></div>
+      <div class="pricing__rope"></div>
+      <div class="pricing__rope pricing__rope--2"></div>
+    </div>
+
+    <div class="container pricing__inner">
+      <h2 class="section-title section-title--light reveal">Escolha seu pacote de treinos</h2>
+      <p class="section-sub section-sub--light reveal">Invista no seu bem-estar e evolução na natação</p>
+
+      <div class="pricing__table reveal">
+        <div class="pricing__head">
+          <span>Pacote</span>
+          <span>Individual</span>
+          <span>Dupla</span>
+        </div>
+        <!-- ✏️ TROCAR VALORES -->
+        <div class="pricing__row">
+          <div class="pricing__plan"><strong>Aula avulsa</strong><small>Ideal para experimentar</small></div>
+          <div class="pricing__val">R$ 120</div>
+          <div class="pricing__val">R$ 90<small>/pessoa</small></div>
+        </div>
+        <div class="pricing__row">
+          <div class="pricing__plan"><strong>Pacote 5 aulas</strong><small>Economia de 8%</small></div>
+          <div class="pricing__val">R$ 550</div>
+          <div class="pricing__val pricing__val--na">—</div>
+        </div>
+        <div class="pricing__row pricing__row--best">
+          <div class="pricing__plan"><strong>Pacote 10 aulas</strong><small>Melhor custo-benefício ⭐</small></div>
+          <div class="pricing__val pricing__val--hl">R$ 1.000</div>
+          <div class="pricing__val">R$ 800<small>/pessoa</small></div>
+        </div>
+      </div>
+
+      <p class="pricing__note reveal">Valores sujeitos a alteração. Fale conosco para condições especiais.</p>
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes." class="btn pricing__btn reveal" target="_blank" rel="noopener">Quero agendar</a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       DIFERENCIAIS
+  ════════════════════════════════════════ -->
+  <section class="diff" id="diferenciais">
+    <div class="container">
+      <h2 class="section-title reveal">Por que me escolher</h2>
+
+      <div class="diff__layout">
+        <div class="diff__card reveal">
+          <div class="diff__card-icon">🎓</div>
+          <h4>Formação em Educação Física</h4>
+          <p>Graduação completa com especialização em natação e desenvolvimento infantil.</p>
+        </div>
+        <div class="diff__card reveal" style="--delay:.1s">
+          <div class="diff__card-icon">🛡️</div>
+          <h4>Metodologia segura</h4>
+          <p>Protocolos rigorosos de segurança aquática em cada aula, sem exceção.</p>
+        </div>
+
+        <div class="diff__photo reveal">
+          <!-- ✏️ TROCAR: <img src="foto-diferencial.jpg" alt="Treinador"> -->
+          <div class="diff__photo-placeholder">
+            <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="35" r="18" stroke="white" stroke-width="2.5"/><path d="M18 88c7-22 16-32 32-32s25 10 32 32" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="diff__photo-ring"></div>
+        </div>
+
+        <div class="diff__card reveal" style="--delay:.2s">
+          <div class="diff__card-icon">📋</div>
+          <h4>Acompanhamento individual</h4>
+          <p>Feedback constante e plano de evolução personalizado para cada aluno.</p>
+        </div>
+        <div class="diff__card reveal" style="--delay:.3s">
+          <div class="diff__card-icon">💙</div>
+          <h4>Ambiente acolhedor</h4>
+          <p>Aulas com paciência, empatia e muito carinho. Seu filho se sente seguro aqui.</p>
+        </div>
+      </div>
+
+      <div class="diff__cta reveal">
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn" target="_blank" rel="noopener">Agendar avaliação</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer" id="contato">
+    <div class="footer__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="#0b2a36" d="M0,30 C360,70 720,0 1080,40 C1260,55 1380,20 1440,35 L1440,80 L0,80Z"/></svg>
+    </div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <!-- ✏️ TROCAR NOME -->
+        <h3>Prof. Rafael Mendes</h3>
+        <p>Treinador de natação infantil e adulto.<br>Transformando vidas através da água.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <!-- ✏️ TROCAR TELEFONE / INSTAGRAM / CIDADE -->
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>
+            <a href="https://instagram.com/seuinstagram" target="_blank">@seuinstagram</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>São Paulo – SP</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#valores">Valores</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>© 2025 Prof. Rafael Mendes. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="fab-wa" id="fabWa" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.264-1.226l-.306-.182-2.87.852.852-2.87-.182-.306A8 8 0 1112 20z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
