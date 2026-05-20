@@ -3,417 +3,398 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prof. Rafael Mendes — Treinador de Natação</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>DESAFIO 60 — Cada Metro Conta</title>
+  <meta name="description" content="60 minutos. Uma raia. Uma equipe. Cada metro conta. 1º Desafio 60 Minutos de natação em equipe — Santo André, 29 de agosto de 2025.">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ════════════════════════════════════════
-       HEADER
-  ════════════════════════════════════════ -->
+  <!-- ===== HEADER ===== -->
   <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="#inicio" class="header__logo">
-        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none">
-          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2.2"/>
-          <path d="M8 26c3-6 7-9 12-9s9 3 12 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M8 22c3-6 7-9 12-9s9 3 12 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".3"/>
-          <circle cx="20" cy="14" r="4.5" stroke="currentColor" stroke-width="2"/>
+    <div class="wrap header__wrap">
+      <a href="#inicio" class="logo" aria-label="DESAFIO 60 — Início">
+        <svg class="logo__svg" viewBox="0 0 160 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="28" class="logo__text-d">DESAFIO</text>
+          <text x="98" y="30" class="logo__text-60">60</text>
         </svg>
-        <!-- ✏️ TROCAR NOME DO TREINADOR -->
-        <span>Prof. Rafael Mendes</span>
       </a>
-
-      <nav class="header__nav" id="mainNav">
-        <a href="#inicio" class="header__link">Início</a>
-        <a href="#sobre" class="header__link">Sobre mim</a>
-        <a href="#treinos" class="header__link">Treinos</a>
-        <a href="#modalidades" class="header__link">Modalidades</a>
-        <a href="#valores" class="header__link">Valores</a>
-        <a href="#diferenciais" class="header__link">Diferenciais</a>
-        <a href="#contato" class="header__link">Contato</a>
+      <nav class="nav" id="mainNav">
+        <a href="#inicio" class="nav__link">Início</a>
+        <a href="#evento" class="nav__link">O Evento</a>
+        <a href="#como-funciona" class="nav__link">Como Funciona</a>
+        <a href="#beneficios" class="nav__link">Benefícios</a>
+        <a href="#inscricao" class="nav__link">Inscrição</a>
+        <a href="#contato" class="nav__link">Contato</a>
       </nav>
-
-      <!-- ✏️ TROCAR WHATSAPP (só números, com DDI) -->
-      <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." class="btn btn--sm header__cta" target="_blank" rel="noopener">Agendar aula</a>
-
-      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
+      <a href="#inscricao" class="btn btn--sm btn--primary header__cta">Quero participar</a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
       </button>
     </div>
   </header>
 
-  <!-- ════════════════════════════════════════
-       HERO
-  ════════════════════════════════════════ -->
+  <!-- Mobile overlay -->
+  <div class="mob-overlay" id="mobOverlay">
+    <nav class="mob-overlay__nav">
+      <a href="#inicio">Início</a>
+      <a href="#evento">O Evento</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#inscricao">Inscrição</a>
+      <a href="#contato">Contato</a>
+      <a href="#inscricao" class="btn btn--primary btn--lg">Quero participar</a>
+    </nav>
+  </div>
+
+  <!-- ===== HERO ===== -->
   <section class="hero" id="inicio">
-    <div class="hero__deco hero__deco--blob1"></div>
-    <div class="hero__deco hero__deco--blob2"></div>
-    <div class="hero__deco hero__deco--wave"></div>
+    <!-- Background shapes -->
+    <div class="hero__bg">
+      <div class="hero__bg-circle hero__bg-circle--1"></div>
+      <div class="hero__bg-circle hero__bg-circle--2"></div>
+      <div class="hero__bg-lane hero__bg-lane--1"></div>
+      <div class="hero__bg-lane hero__bg-lane--2"></div>
+      <div class="hero__bg-lane hero__bg-lane--3"></div>
+    </div>
 
-    <div class="container hero__grid">
-      <div class="hero__text">
-        <p class="hero__tag reveal">Natação com segurança e carinho</p>
-        <!-- ✏️ TROCAR NOME -->
-        <h1 class="hero__title reveal">Rafael<br><span>Mendes</span></h1>
-        <p class="hero__subtitle reveal">Treinador de Natação Infantil e Adulto</p>
-        <p class="hero__desc reveal">Seu filho vai amar a água desde a primeira aula. Metodologia segura, acompanhamento individual e muita diversão.</p>
-
-        <div class="hero__actions reveal">
-          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." class="btn" target="_blank" rel="noopener">Agendar aula experimental</a>
-          <a href="#sobre" class="btn btn--ghost">Conheça mais</a>
+    <div class="wrap hero__wrap">
+      <div class="hero__content">
+        <div class="hero__badge reveal" data-d="0">
+          <span class="hero__badge-dot"></span>
+          29 AGO 2025 — SANTO ANDRÉ / SP
         </div>
-
-        <div class="hero__socials reveal">
-          <!-- ✏️ TROCAR LINKS -->
-          <a href="https://instagram.com/seuinstagram" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.264-1.226l-.306-.182-2.87.852.852-2.87-.182-.306A8 8 0 1112 20z"/></svg>
-          </a>
-          <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
+        <h1 class="hero__title reveal" data-d="80">
+          <span class="hero__kicker">DESAFIO</span>
+          <span class="hero__big">
+            <span class="hero__six">6</span><span class="hero__zero">0</span>
+          </span>
+        </h1>
+        <p class="hero__sub reveal" data-d="160">60 minutos. Uma raia. Uma equipe.</p>
+        <p class="hero__slogan reveal" data-d="240">Cada metro conta.</p>
+        <p class="hero__desc reveal" data-d="320">Um desafio de resistência, estratégia e trabalho em equipe dentro da água. Durante 60 minutos, os nadadores se revezam para somar a maior distância possível.</p>
+        <div class="hero__actions reveal" data-d="400">
+          <a href="#inscricao" class="btn btn--primary btn--lg">Inscreva sua equipe</a>
+          <a href="#como-funciona" class="btn btn--ghost btn--lg">Saiba como funciona</a>
         </div>
       </div>
-
-      <div class="hero__visual reveal">
-        <div class="hero__img-ring">
-          <!-- ✏️ TROCAR: substitua o div abaixo por <img src="foto.jpg" alt="Prof. Rafael"> -->
-          <div class="hero__img-placeholder">
-            <svg viewBox="0 0 140 140" fill="none"><circle cx="70" cy="50" r="26" stroke="white" stroke-width="3"/><path d="M22 120c10-28 22-40 48-40s38 12 48 40" stroke="white" stroke-width="3" stroke-linecap="round"/></svg>
-          </div>
+      <div class="hero__visual reveal" data-d="200">
+        <div class="hero__img-frame">
+          <img src="images/piscina-raias.png" alt="Nadadores competindo em piscina olímpica com raias" class="hero__img" loading="eager">
+          <div class="hero__img-overlay"></div>
         </div>
-        <div class="hero__badge hero__badge--1">
-          <span class="hero__badge-emoji">🏊</span>
-          <div><strong>+1.000</strong><small>alunos</small></div>
+        <!-- Floating accent shapes -->
+        <div class="hero__float hero__float--timer">
+          <span>60</span>
+          <small>MIN</small>
         </div>
-        <div class="hero__badge hero__badge--2">
-          <span class="hero__badge-emoji">⭐</span>
-          <div><strong>11+ anos</strong><small>experiência</small></div>
+        <div class="hero__float hero__float--tag">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#35D5FF" stroke-width="2"/><path d="M8 4v5l3 2" stroke="#35D5FF" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Revezamento
         </div>
       </div>
     </div>
 
-    <div class="hero__curve">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path fill="#ffffff" d="M0,60 C320,120 640,0 960,60 C1120,90 1300,30 1440,60 L1440,120 L0,120Z"/>
-      </svg>
+    <!-- Lane-line color strip -->
+    <div class="hero__lanes">
+      <span style="background:#185ADB"></span>
+      <span style="background:#35D5FF"></span>
+      <span style="background:#FF7A00"></span>
+      <span style="background:#E94B8A"></span>
+      <span style="background:#185ADB"></span>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════
-       SOBRE MIM
-  ════════════════════════════════════════ -->
-  <section class="about" id="sobre">
-    <div class="container">
-      <h2 class="section-title reveal">Sobre Mim</h2>
-
-      <div class="about__grid">
-        <div class="about__photo reveal">
-          <!-- ✏️ TROCAR: <img src="foto-sobre.jpg" alt="Treinador"> -->
-          <div class="about__photo-placeholder">
-            <svg viewBox="0 0 80 100" fill="none"><circle cx="40" cy="30" r="16" stroke="white" stroke-width="2.5"/><path d="M10 85c6-18 16-28 30-28s24 10 30 28" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
-          </div>
-          <div class="about__photo-deco"></div>
-        </div>
-
-        <div class="about__content reveal">
-          <!-- ✏️ TROCAR TEXTOS -->
-          <p class="about__greeting">Olá! Eu sou o <strong>Rafael Mendes</strong>, treinador de natação com formação em Educação Física e mais de uma década de dedicação à água.</p>
-          <p>Ensino natação desde 2013 e já tive o privilégio de acompanhar centenas de alunos — desde bebês em suas primeiras braçadas até adultos superando medos e alcançando novos objetivos na água.</p>
-          <p>Minha missão é ser mais do que um professor: quero ser um parceiro na jornada de cada aluno, criando um ambiente seguro, acolhedor e divertido. Cada passo no desenvolvimento de um nadador é uma oportunidade de inspirar confiança e amor pela água.</p>
-        </div>
-      </div>
-
-      <!-- ✏️ TROCAR NÚMEROS -->
-      <div class="about__stats">
-        <div class="about__stat reveal">
-          <span class="about__stat-num">>11</span>
-          <span class="about__stat-unit">anos</span>
-          <span class="about__stat-label">de experiência como treinador</span>
-        </div>
-        <div class="about__stat reveal" style="--delay:.12s">
-          <span class="about__stat-num">20</span>
-          <span class="about__stat-unit">mil</span>
-          <span class="about__stat-label">treinos realizados</span>
-        </div>
-        <div class="about__stat reveal" style="--delay:.24s">
-          <span class="about__stat-num">1.000<small>+</small></span>
-          <span class="about__stat-unit">&nbsp;</span>
-          <span class="about__stat-label">alunos que amam nadar</span>
-        </div>
+  <!-- ===== MARQUEE STRIP ===== -->
+  <section class="strip" aria-hidden="true">
+    <div class="strip__track">
+      <div class="strip__roll">
+        <span>EQUIPE</span><span class="strip__sep">●</span>
+        <span>ESTRATÉGIA</span><span class="strip__sep">●</span>
+        <span>RESISTÊNCIA</span><span class="strip__sep">●</span>
+        <span>REVEZAMENTO</span><span class="strip__sep">●</span>
+        <span>DISTÂNCIA</span><span class="strip__sep">●</span>
+        <span>EQUIPE</span><span class="strip__sep">●</span>
+        <span>ESTRATÉGIA</span><span class="strip__sep">●</span>
+        <span>RESISTÊNCIA</span><span class="strip__sep">●</span>
+        <span>REVEZAMENTO</span><span class="strip__sep">●</span>
+        <span>DISTÂNCIA</span><span class="strip__sep">●</span>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════
-       NAS AULAS TRABALHAMOS
-  ════════════════════════════════════════ -->
-  <section class="benefits" id="treinos">
-    <div class="benefits__wave-top">
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path fill="#ffffff" d="M0,50 C360,110 720,-10 1080,50 C1260,80 1380,30 1440,50 L1440,0 L0,0Z"/></svg>
+  <!-- ===== O EVENTO (cards) ===== -->
+  <section class="evento" id="evento">
+    <div class="wrap">
+      <div class="evento__grid">
+        <!-- Card principal -->
+        <article class="ecard ecard--main reveal-up" data-d="0">
+          <span class="ecard__tag">O Evento</span>
+          <h2 class="ecard__headline">Mais que uma prova.<br><strong>Uma experiência coletiva<br>dentro da água.</strong></h2>
+          <p class="ecard__body">O DESAFIO 60 une performance, estratégia e espírito de equipe em uma competição onde cada revezamento interfere no resultado final.</p>
+          <a href="#como-funciona" class="btn btn--primary">Entenda o formato</a>
+        </article>
+
+        <!-- Stat 1 -->
+        <article class="ecard ecard--stat ecard--dark reveal-up" data-d="80">
+          <div class="ecard__stat-num">60</div>
+          <div class="ecard__stat-label">minutos<br>de prova</div>
+          <!-- Decorative ring -->
+          <svg class="ecard__ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" stroke-width="2" stroke="#35D5FF" fill="none" opacity=".25"/></svg>
+        </article>
+
+        <!-- Stat 2 -->
+        <article class="ecard ecard--stat ecard--orange reveal-up" data-d="160">
+          <div class="ecard__stat-num">∞</div>
+          <div class="ecard__stat-label">atletas<br>por equipe</div>
+        </article>
+
+        <!-- Image card -->
+        <article class="ecard ecard--photo reveal-up" data-d="240">
+          <img src="images/equipe-feliz.jpg" alt="Equipe de nadadores animados" loading="lazy">
+          <div class="ecard__photo-caption">"Cada entrada na água<br>muda o resultado."</div>
+        </article>
+
+        <!-- Quote card -->
+        <article class="ecard ecard--quote ecard--blue reveal-up" data-d="320">
+          <blockquote>"Não vence quem nada sozinho.<br><strong>Vence quem soma mais.</strong>"</blockquote>
+        </article>
+
+        <!-- Extra stat -->
+        <article class="ecard ecard--stat ecard--dark reveal-up" data-d="200">
+          <div class="ecard__stat-num" style="font-size:2.6rem">TOP 5</div>
+          <div class="ecard__stat-label">equipes<br>no pódio</div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div class="container">
-      <h2 class="section-title section-title--light reveal">Nas aulas trabalhamos</h2>
-      <p class="section-sub section-sub--light reveal">Muito mais que nadar — desenvolvemos saúde, confiança e habilidades para a vida</p>
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section class="howto" id="como-funciona">
+    <div class="wrap howto__wrap">
+      <div class="howto__text">
+        <span class="tag reveal" data-d="0">Como Funciona</span>
+        <h2 class="section-h reveal" data-d="80">Tudo que você<br>precisa <em>saber.</em></h2>
 
+        <div class="steps">
+          <div class="step active reveal" data-d="160">
+            <button class="step__head" aria-expanded="true">
+              <span class="step__num">01</span>
+              <span class="step__title">Monte sua equipe</span>
+              <span class="step__icon"></span>
+            </button>
+            <div class="step__body">
+              <p>Reúna seus nadadores — não há limite de atletas por equipe. Cada integrante contribui para o resultado final.</p>
+            </div>
+          </div>
+          <div class="step reveal" data-d="220">
+            <button class="step__head">
+              <span class="step__num">02</span>
+              <span class="step__title">60 minutos de prova</span>
+              <span class="step__icon"></span>
+            </button>
+            <div class="step__body">
+              <p>O desafio dura exatamente 60 minutos. A equipe utiliza uma raia exclusiva durante todo o tempo.</p>
+            </div>
+          </div>
+          <div class="step reveal" data-d="280">
+            <button class="step__head">
+              <span class="step__num">03</span>
+              <span class="step__title">Revezamento estratégico</span>
+              <span class="step__icon"></span>
+            </button>
+            <div class="step__body">
+              <p>Cada atleta entra em momentos estratégicos. A ordem, duração e frequência dos revezamentos são livres — a estratégia é da equipe.</p>
+            </div>
+          </div>
+          <div class="step reveal" data-d="340">
+            <button class="step__head">
+              <span class="step__num">04</span>
+              <span class="step__title">Maior distância vence</span>
+              <span class="step__icon"></span>
+            </button>
+            <div class="step__body">
+              <p>Vence a equipe que somar a maior metragem total ao final dos 60 minutos. Resistência, estratégia e ritmo coletivo são fundamentais.</p>
+            </div>
+          </div>
+          <div class="step reveal" data-d="400">
+            <button class="step__head">
+              <span class="step__num">05</span>
+              <span class="step__title">Arbitragem oficial</span>
+              <span class="step__icon"></span>
+            </button>
+            <div class="step__body">
+              <p>Cada equipe conta com 3 árbitros de contagem dedicados, garantindo precisão e justiça no resultado final.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="howto__visual reveal" data-d="120">
+        <div class="howto__stack">
+          <img src="images/estrategia-equipe.png" alt="Equipe discutindo estratégia na borda da piscina" class="howto__img howto__img--a" loading="lazy">
+          <img src="images/maos-unidas.png" alt="Mãos unidas — espírito de equipe" class="howto__img howto__img--b" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUE PARTICIPAR ===== -->
+  <section class="benefits" id="beneficios">
+    <div class="wrap">
+      <div class="benefits__head">
+        <span class="tag reveal" data-d="0">Por que participar</span>
+        <h2 class="section-h reveal" data-d="80">Diferenciais que fazem<br>do DESAFIO 60 <em>único.</em></h2>
+      </div>
       <div class="benefits__grid">
-        <div class="benefits__card reveal">
-          <div class="benefits__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M14 38V24l10-12 10 12v14"/><path d="M20 38v-8h8v8"/></svg>
+        <article class="bcard reveal-up" data-d="0">
+          <div class="bcard__icon bcard__icon--blue">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="2" fill="none"/><path d="M8 34c0-7 5-12 12-12s12 5 12 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>
           </div>
-          <h3>Melhora da forma física</h3>
-          <p>Fortalecimento muscular e resistência de forma lúdica e progressiva.</p>
-        </div>
-        <div class="benefits__card reveal" style="--delay:.08s">
-          <div class="benefits__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="18"/><path d="M16 24c2-3 4-5 8-5s6 2 8 5"/><path d="M18 18h.02M30 18h.02"/></svg>
+          <h3>Espírito de equipe</h3>
+          <p>Fortaleça laços e construa resultados coletivos dentro da água.</p>
+        </article>
+        <article class="bcard reveal-up" data-d="80">
+          <div class="bcard__icon bcard__icon--orange">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 8v12l8 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3>Coordenação motora</h3>
-          <p>Movimentos precisos que melhoram o desenvolvimento motor global.</p>
-        </div>
-        <div class="benefits__card reveal" style="--delay:.16s">
-          <div class="benefits__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M24 4v8M24 36v8M4 24h8M36 24h8"/><circle cx="24" cy="24" r="10"/><path d="M14 14l6 6M28 28l6 6M34 14l-6 6M16 28l-6 6"/></svg>
+          <h3>Competição dinâmica</h3>
+          <p>60 minutos de adrenalina com revezamentos estratégicos em tempo real.</p>
+        </article>
+        <article class="bcard reveal-up" data-d="160">
+          <div class="bcard__icon bcard__icon--cyan">
+            <svg viewBox="0 0 40 40"><path d="M6 28c4-6 8-2 12-8s8-2 12-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M6 32c4-6 8-2 12-8s8-2 12-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".35"/></svg>
           </div>
-          <h3>Segurança na água</h3>
-          <p>Técnicas de sobrevivência e prevenção de afogamento desde cedo.</p>
-        </div>
-        <div class="benefits__card reveal" style="--delay:.24s">
-          <div class="benefits__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 24c5-8 9-12 14-12s8 3 10 8c2-5 4-8 10-8s9 4 14 12"/><path d="M4 32c5-8 9-12 14-12s8 3 10 8c2-5 4-8 10-8s9 4 14 12" opacity=".35"/></svg>
+          <h3>Acessível e estratégico</h3>
+          <p>Todos os níveis são bem-vindos. A estratégia faz a diferença, não só a velocidade.</p>
+        </article>
+        <article class="bcard reveal-up" data-d="240">
+          <div class="bcard__icon bcard__icon--pink">
+            <svg viewBox="0 0 40 40"><path d="M20 6l4 8 9 1-7 6 2 9-8-4-8 4 2-9-7-6 9-1z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Respiração</h3>
-          <p>Controle respiratório que melhora a capacidade pulmonar e o foco.</p>
-        </div>
-        <div class="benefits__card reveal" style="--delay:.32s">
-          <div class="benefits__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M24 4L30 16 44 18.5 34 28 36 42 24 36 12 42 14 28 4 18.5 18 16z"/></svg>
+          <h3>Experiência marcante</h3>
+          <p>Um evento que fica na memória de atletas e público.</p>
+        </article>
+        <article class="bcard reveal-up" data-d="320">
+          <div class="bcard__icon bcard__icon--blue">
+            <svg viewBox="0 0 40 40"><rect x="6" y="14" width="28" height="18" rx="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M14 14V10a6 6 0 0112 0v4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
           </div>
-          <h3>Confiança</h3>
-          <p>Cada conquista na piscina fortalece a autoestima dentro e fora da água.</p>
-        </div>
-        <div class="benefits__card reveal" style="--delay:.40s">
-          <div class="benefits__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M24 44c-8-6-16-14-16-22a10 10 0 0120 0"/><path d="M24 44c8-6 16-14 16-22a10 10 0 00-20 0"/><path d="M24 28v-8M20 24h8"/></svg>
+          <h3>Ideal para clubes e academias</h3>
+          <p>Formato perfeito para grupos, projetos e equipes de qualquer tamanho.</p>
+        </article>
+        <article class="bcard reveal-up" data-d="400">
+          <div class="bcard__icon bcard__icon--orange">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2" fill="none"/><path d="M14 18c0 0 2 5 6 5s6-5 6-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="15" cy="15" r="1.5" fill="currentColor"/><circle cx="25" cy="15" r="1.5" fill="currentColor"/></svg>
           </div>
-          <h3>Saúde cardiovascular</h3>
-          <p>O melhor exercício para o coração, com baixo impacto e alto benefício.</p>
-        </div>
+          <h3>Alto engajamento</h3>
+          <p>O formato coletivo gera torcida, energia e envolvimento do primeiro ao último minuto.</p>
+        </article>
       </div>
-    </div>
-
-    <div class="benefits__wave-bottom">
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path fill="#ffffff" d="M0,50 C360,110 720,-10 1080,50 C1260,80 1380,30 1440,50 L1440,100 L0,100Z"/></svg>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════
-       MODALIDADES
-  ════════════════════════════════════════ -->
-  <section class="modalities" id="modalidades">
-    <div class="container">
-      <h2 class="section-title reveal">Escolha o treino ideal</h2>
-
-      <div class="modalities__group">
-        <h3 class="modalities__label reveal"><span></span>Para crianças<span></span></h3>
-        <div class="modalities__grid">
-          <div class="mod-card reveal">
-            <div class="mod-card__bar"></div>
-            <h4>Aula individual</h4>
-            <p>Atenção 100% focada no seu filho. Aprendizado personalizado do zero, com evolução no ritmo ideal de cada criança.</p>
-          </div>
-          <div class="mod-card mod-card--accent reveal" style="--delay:.06s">
-            <div class="mod-card__bar"></div>
-            <h4>Preparação para competições</h4>
-            <p>Treino técnico para crianças que já nadam e querem experiência competitiva, evolução de nados e marcas.</p>
-          </div>
-          <div class="mod-card reveal" style="--delay:.12s">
-            <div class="mod-card__bar"></div>
-            <h4>Mini grupo</h4>
-            <p>Grupos de 2 a 3 crianças. Ideal para socialização, diversão e aprendizado coletivo com atenção especial.</p>
-          </div>
-          <div class="mod-card mod-card--accent reveal" style="--delay:.18s">
-            <div class="mod-card__bar"></div>
-            <h4>Crianças com necessidades específicas</h4>
-            <p>Aulas adaptadas com paciência e metodologia inclusiva para crianças do espectro autista ou outras condições.</p>
-          </div>
+  <!-- ===== MANIFESTO ===== -->
+  <section class="manifesto">
+    <div class="wrap">
+      <div class="manifesto__mosaic">
+        <div class="mcard mcard--dark reveal-up" data-d="0">
+          <p>A vitória é <span class="c-cyan">coletiva.</span></p>
         </div>
-      </div>
-
-      <div class="modalities__group">
-        <h3 class="modalities__label reveal"><span></span>Para adultos<span></span></h3>
-        <div class="modalities__grid">
-          <div class="mod-card reveal">
-            <div class="mod-card__bar"></div>
-            <h4>Aula individual</h4>
-            <p>Treino personalizado com foco nas suas metas: aprender a nadar, melhorar técnica ou condicionamento.</p>
-          </div>
-          <div class="mod-card reveal" style="--delay:.06s">
-            <div class="mod-card__bar"></div>
-            <h4>Mini grupo</h4>
-            <p>Treine com um amigo ou parceiro. Ideal para casais, amigos ou duplas que buscam motivação conjunta.</p>
-          </div>
-          <div class="mod-card mod-card--accent reveal" style="--delay:.12s">
-            <div class="mod-card__bar"></div>
-            <h4>Reabilitação aquática</h4>
-            <p>Recuperação de lesões e fortalecimento com exercícios de baixo impacto orientados por profissional qualificado.</p>
-          </div>
-          <div class="mod-card reveal" style="--delay:.18s">
-            <div class="mod-card__bar"></div>
-            <h4>Treino para gestantes</h4>
-            <p>Exercícios seguros e confortáveis na água para futuras mamães, com acompanhamento especializado.</p>
-          </div>
+        <div class="mcard mcard--img reveal-up" data-d="60">
+          <img src="images/briefing-equipe.jpg" alt="Equipe reunida na borda da piscina" loading="lazy">
+        </div>
+        <div class="mcard mcard--orange reveal-up" data-d="120">
+          <p>Nade, reveze,<br><strong>some metros.</strong></p>
+        </div>
+        <div class="mcard mcard--outline reveal-up" data-d="180">
+          <p>Estratégia, resistência e equipe <span class="c-blue">dentro da água.</span></p>
+        </div>
+        <div class="mcard mcard--blue reveal-up" data-d="240">
+          <p>Uma hora para transformar <strong>esforço em distância.</strong></p>
+        </div>
+        <div class="mcard mcard--gradient reveal-up" data-d="300">
+          <p>Cada entrada na água <strong>muda o resultado.</strong></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════
-       PACOTES E VALORES
-  ════════════════════════════════════════ -->
-  <section class="pricing" id="valores">
-    <div class="pricing__pool">
-      <div class="pricing__lane-line"></div>
-      <div class="pricing__lane-line"></div>
-      <div class="pricing__lane-line"></div>
-      <div class="pricing__lane-line"></div>
-      <div class="pricing__rope"></div>
-      <div class="pricing__rope pricing__rope--2"></div>
-    </div>
-
-    <div class="container pricing__inner">
-      <h2 class="section-title section-title--light reveal">Escolha seu pacote de treinos</h2>
-      <p class="section-sub section-sub--light reveal">Invista no seu bem-estar e evolução na natação</p>
-
-      <div class="pricing__table reveal">
-        <div class="pricing__head">
-          <span>Pacote</span>
-          <span>Individual</span>
-          <span>Dupla</span>
-        </div>
-        <!-- ✏️ TROCAR VALORES -->
-        <div class="pricing__row">
-          <div class="pricing__plan"><strong>Aula avulsa</strong><small>Ideal para experimentar</small></div>
-          <div class="pricing__val">R$ 120</div>
-          <div class="pricing__val">R$ 90<small>/pessoa</small></div>
-        </div>
-        <div class="pricing__row">
-          <div class="pricing__plan"><strong>Pacote 5 aulas</strong><small>Economia de 8%</small></div>
-          <div class="pricing__val">R$ 550</div>
-          <div class="pricing__val pricing__val--na">—</div>
-        </div>
-        <div class="pricing__row pricing__row--best">
-          <div class="pricing__plan"><strong>Pacote 10 aulas</strong><small>Melhor custo-benefício ⭐</small></div>
-          <div class="pricing__val pricing__val--hl">R$ 1.000</div>
-          <div class="pricing__val">R$ 800<small>/pessoa</small></div>
-        </div>
-      </div>
-
-      <p class="pricing__note reveal">Valores sujeitos a alteração. Fale conosco para condições especiais.</p>
-      <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes." class="btn pricing__btn reveal" target="_blank" rel="noopener">Quero agendar</a>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════
-       DIFERENCIAIS
-  ════════════════════════════════════════ -->
-  <section class="diff" id="diferenciais">
-    <div class="container">
-      <h2 class="section-title reveal">Por que me escolher</h2>
-
-      <div class="diff__layout">
-        <div class="diff__card reveal">
-          <div class="diff__card-icon">🎓</div>
-          <h4>Formação em Educação Física</h4>
-          <p>Graduação completa com especialização em natação e desenvolvimento infantil.</p>
-        </div>
-        <div class="diff__card reveal" style="--delay:.1s">
-          <div class="diff__card-icon">🛡️</div>
-          <h4>Metodologia segura</h4>
-          <p>Protocolos rigorosos de segurança aquática em cada aula, sem exceção.</p>
-        </div>
-
-        <div class="diff__photo reveal">
-          <!-- ✏️ TROCAR: <img src="foto-diferencial.jpg" alt="Treinador"> -->
-          <div class="diff__photo-placeholder">
-            <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="35" r="18" stroke="white" stroke-width="2.5"/><path d="M18 88c7-22 16-32 32-32s25 10 32 32" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <!-- ===== INSCRIÇÃO / CTA ===== -->
+  <section class="cta" id="inscricao">
+    <div class="wrap">
+      <div class="cta__box">
+        <div class="cta__left">
+          <h2 class="cta__title reveal" data-d="0">Monte sua equipe.<br>Entre na água.<br><span class="c-cyan">Some metros.</span></h2>
+          <p class="cta__desc reveal" data-d="80">As inscrições estão abertas. Reúna seus nadadores, defina a estratégia e entre para o 1º DESAFIO 60 — Santo André.</p>
+          <dl class="cta__info reveal" data-d="160">
+            <div class="cta__info-row">
+              <dt>Data</dt>
+              <dd>29 de agosto de 2025</dd>
+            </div>
+            <div class="cta__info-row">
+              <dt>Local</dt>
+              <dd>Piscina Olímpica — Complexo Pedro Dell'Antonia, Santo André/SP</dd>
+            </div>
+            <div class="cta__info-row">
+              <dt>Inscrição</dt>
+              <dd>A partir de R$&nbsp;50,00 por atleta</dd>
+            </div>
+          </dl>
+          <div class="cta__buttons reveal" data-d="240">
+            <a href="#" class="btn btn--primary btn--lg">Fazer inscrição</a>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn btn--ghost-light btn--lg">Falar com a organização</a>
           </div>
-          <div class="diff__photo-ring"></div>
         </div>
-
-        <div class="diff__card reveal" style="--delay:.2s">
-          <div class="diff__card-icon">📋</div>
-          <h4>Acompanhamento individual</h4>
-          <p>Feedback constante e plano de evolução personalizado para cada aluno.</p>
+        <div class="cta__right reveal" data-d="100">
+          <div class="cta__bignum"><span>6</span><span class="c-cyan-t">0</span></div>
+          <p class="cta__slogan">Cada metro conta.</p>
         </div>
-        <div class="diff__card reveal" style="--delay:.3s">
-          <div class="diff__card-icon">💙</div>
-          <h4>Ambiente acolhedor</h4>
-          <p>Aulas com paciência, empatia e muito carinho. Seu filho se sente seguro aqui.</p>
-        </div>
-      </div>
-
-      <div class="diff__cta reveal">
-        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn" target="_blank" rel="noopener">Agendar avaliação</a>
+        <!-- BG decoration -->
+        <div class="cta__glow"></div>
       </div>
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════
-       FOOTER
-  ════════════════════════════════════════ -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer" id="contato">
-    <div class="footer__wave">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="#0b2a36" d="M0,30 C360,70 720,0 1080,40 C1260,55 1380,20 1440,35 L1440,80 L0,80Z"/></svg>
-    </div>
-    <div class="container footer__grid">
+    <div class="wrap footer__wrap">
       <div class="footer__brand">
-        <!-- ✏️ TROCAR NOME -->
-        <h3>Prof. Rafael Mendes</h3>
-        <p>Treinador de natação infantil e adulto.<br>Transformando vidas através da água.</p>
+        <div class="footer__logo">
+          <svg viewBox="0 0 160 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="28" class="logo__text-d" fill="#fff">DESAFIO</text>
+            <text x="98" y="30" class="logo__text-60" fill="#FF7A00">60</text>
+          </svg>
+        </div>
+        <p class="footer__slogan">Cada metro conta.</p>
+        <p class="footer__org">1º Desafio 60 Minutos — Santo André<br>Natação Santo André</p>
+      </div>
+      <div class="footer__col">
+        <h4>Links</h4>
+        <a href="#inicio">Início</a>
+        <a href="#evento">O Evento</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#inscricao">Inscrição</a>
       </div>
       <div class="footer__col">
         <h4>Contato</h4>
-        <ul>
-          <!-- ✏️ TROCAR TELEFONE / INSTAGRAM / CIDADE -->
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
-            <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a>
-          </li>
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>
-            <a href="https://instagram.com/seuinstagram" target="_blank">@seuinstagram</a>
-          </li>
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>São Paulo – SP</span>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre mim</a></li>
-          <li><a href="#modalidades">Modalidades</a></li>
-          <li><a href="#valores">Valores</a></li>
-        </ul>
+        <a href="mailto:contato@desafio60.com.br">contato@desafio60.com.br</a>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/natacaosantoandre" target="_blank" rel="noopener">@natacaosantoandre</a>
+        <span>Santo André — SP</span>
       </div>
     </div>
-    <div class="footer__bottom container">
-      <span>© 2025 Prof. Rafael Mendes. Todos os direitos reservados.</span>
+    <div class="wrap footer__bottom">
+      <small>&copy; 2025 DESAFIO 60 — Natação Santo André. Todos os direitos reservados.</small>
     </div>
   </footer>
 
-  <!-- BOTÃO FLUTUANTE WHATSAPP -->
-  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="fab-wa" id="fabWa" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.264-1.226l-.306-.182-2.87.852.852-2.87-.182-.306A8 8 0 1112 20z"/></svg>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="fab" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
   <script src="script.js"></script>
